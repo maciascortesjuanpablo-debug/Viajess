@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌎Global Aventures</title>
-    <!-- Enlace al archivo CSS externo -->
-    <link rel="stylesheet" href="./css/destinos.css">
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Global Adventures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/destinos.css" />
 </head>
 <body>
-    <header>
-        <h1>Destinos Imperdibles Por El Mundo</h1>
-        <p>Descubre los lugares fascinantes</p>
-    </header>
-
-    <main class="destinos-container">
+    <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">🌍</span>
+      <span class="logo-text">Global Adventures</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="destinos.html">Destinos</a></li>
+      <li><a href="#">Nosotros</a></li>
+      <li><a href="contactos.html">Contacto</a></li>
+    </ul>
+    <a href="#" class="btn-nav">Reservar ahora</a>
+    <button class="hamburger" aria-label="Menú">&#9776;</button>
+  </nav>
+    <!-- ===== SECCIÓN DE DESTINOS ===== -->
+<section class="section destinations-page">
+        <div class="section-header">
+            <p class="section-tag">Descubre el mundo</p>
+            <h2 class="section-title">Destinos <em>imperdibles</em> por el mundo</h2>
+            <p class="section-sub">Descubre todos los lugares fascinantes que te esperan.</p>
+        </div>
+        <main class="destinos-container">
         <!-- Tarjeta 1: Londres -->
         <div class="destino-card">
-            <img src="" alt="Londres, Reino Unido" class="destino-img">
+            <img src="./Img/Londres.jpg" alt="Londres, Reino Unido" class="destino-img">
             <div class="destino-info">
                 <h3>Londres</h3>
                 <p>La capital del Reino Unido, conocida por su historia rica, arquitectura impresionante y museos de renombre mundial.</p>
@@ -26,7 +45,7 @@
 
         <!-- Tarjeta 2: Brasil -->
         <div class="destino-card">
-            <img src="" alt="Playa de Copacabana, Brasil" class="destino-img">
+            <img src="./Img/Brasil.jpg" alt="Playa de Copacabana, Brasil" class="destino-img">
             <div class="destino-info">
                 <h3>Brasil</h3>
                 <p>País más grande de América del Sur, conocido por su biodiversidad, cultura rica y playas hermosas.</p>
@@ -36,7 +55,7 @@
 
         <!-- Tarjeta 3: Las Vegas -->
         <div class="destino-card">
-            <img src="" alt="Valle de Cocora en Salento" class="destino-img">
+            <img src="./Img/Lasvegas.jpg" alt="Las Vegas, Estados Unidos" class="destino-img">
             <div class="destino-info">
                 <h3>Las Vegas</h3>
                 <p> Ciudad de luces y entretenimiento, famosa por sus casinos, espectáculos y vida noturna vibrante.</p>
@@ -46,27 +65,27 @@
 
         <!-- Tarjeta 4: Malasia -->
         <div class="destino-card">
-            <img src="" alt="Templo de Malasia" class="destino-img">
+            <img src="./Img/Malasia.jpg" alt="Templo de Malasia" class="destino-img">
             <div class="destino-info">
                 <h3>Malasia</h3>
                 <p>País insular en el sudeste asiático, conocido por su diversidad cultural, arquitectura colonial y paisajes tropicales.</p>
                 <a href="#mas-info-malasia" class="btn-ver-mas">Ver más</a>
             </div>
-                <a href="#mas-info-san-agustin" class="btn-ver-mas">Ver más</a>
-            </div>
         </div>
+
         <!-- Tarjeta 5: París -->
         <div class="destino-card">
-            <img src="https://ejemplo.com/paris.jpg" alt="Torre Eiffel, París" class="destino-img">
+            <img src="./Img/Paris.jpg" alt="Torre Eiffel, París" class="destino-img">
             <div class="destino-info">
                 <h3>París</h3>
                 <p>La ciudad de la luz, famosa por su arquitectura neoclásica, museos de renombre y su ambiente romántico.</p>
-                <a href="#mas-info-san-agustin" class="btn-ver-mas">Ver más</a>
+                <a href="#mas-info-paris" class="btn-ver-mas">Ver más</a>
             </div>
         </div>
-        <!-- Tokio -->
+        
+        <!-- Tarjeta 6: Tokio -->
         <div class="destino-card">
-            <img src="https://ejemplo.com/tokio.jpg" alt="Torre de Tokio, Japón" class="destino-img">
+            <img src="./Img/Tokio1.jpg" alt="Torre de Tokio, Japón" class="destino-img">
             <div class="destino-info">
                 <h3>Tokio</h3>
                 <p>La capital de Japón, conocida por su mezcla única de tradición y modernidad, con lugares históricos y una vibrante vida urbana.</p>
@@ -74,10 +93,13 @@
             </div>
         </div>
     </main>
-    
-    <footer>
-        <p>&copy; 2026 Global Aventures | Sección Destinos</p>
-    </footer>
+</section>    
+
+<footer class="footer">
+    <div class="footer-bottom">
+    <p>&copy; 2025 Global Adventures. Todos los derechos reservados.</p>
+    </div>
+</footer>
     
 </body>
 </html>
