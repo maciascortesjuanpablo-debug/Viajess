@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Global Adventures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Css/nosotros.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════ NAVBAR ══════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-mark">🌎</span>
+      <span>Global Adventures</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="./index.html" class="nav-link">Inicio</a></li>
+      <li><a href="./destinos.html" class="nav-link">Destinos</a></li>
+      <li><a href="./nosotros.html" class="nav-link active">Nosotros</a></li>
+      <li><a href="./contactos.html" class="nav-link">Contacto</a></li>
+    </ul>
+    <a href="contacto.html" class="btn-reservar">Reservar ahora</a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menú">&#9776;</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="./index.html">Inicio</a>
+    <a href="./destinos.html">Destinos</a>
+    <a href="./nosotros.html">Nosotros</a>
+    <a href="./contactos.html">Contacto</a>
+    <a href="./contactos.html" class="btn-reservar-mobile">Reservar ahora</a>
+  </div>
+
+  <!-- ══════════════════════════════ HERO ══════════════════════════════ -->
+  <section class="hero-interior">
+    <div class="hero-overlay"></div>
+    <div class="hero-interior-content">
+      <span class="etiqueta">Quiénes somos</span>
+      <h1>Nuestra <em>historia</em></h1>
+      <p>Más de 15 años convirtiendo sueños en destinos reales, con pasión, experiencia y vocación de servicio.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ HISTORIA ══════════════════════════════ -->
+  <section class="historia-sec">
+    <div class="historia-inner">
+      <div class="historia-img">
+        <!-- 👇 Cambia 'nosotros-foto.jpg' por tu imagen -->
+        <img src="./Img/imagenviajes.avif" alt="Global Adventures">
+      </div>
+      <div class="historia-texto">
+        <span class="etiqueta">Nuestra historia</span>
+        <h2>Nacimos para <em>explorar</em> el mundo contigo</h2>
+        <p>Global Adventures nació en 2009 con una misión clara: hacer que cada viaje sea una experiencia irrepetible. Lo que comenzó como una pequeña agencia en Bogotá, hoy se ha convertido en una de las agencias más reconocidas del país.</p>
+        <p>Creemos que viajar no es solo llegar a un destino — es transformarse. Por eso cada paquete, cada itinerario y cada detalle está pensado para que vivas momentos únicos que recuerdes toda la vida.</p>
+        <p>Nuestro equipo de expertos viajeros te acompaña desde la primera consulta hasta que regresas a casa, asegurando que cada paso de tu viaje sea perfecto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ STATS ══════════════════════════════ -->
+  <section class="stats-sec">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-numero">15+</div>
+        <div class="stat-label">Años de experiencia</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-numero">10K+</div>
+        <div class="stat-label">Viajeros felices</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-numero">80+</div>
+        <div class="stat-label">Destinos disponibles</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-numero">98%</div>
+        <div class="stat-label">Clientes satisfechos</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ VALORES ══════════════════════════════ -->
+  <section class="valores-sec">
+    <div class="seccion-header">
+      <span class="etiqueta">Lo que nos mueve</span>
+      <h2>Nuestros <em>valores</em></h2>
+      <p>Los principios que guían cada decisión que tomamos para ti.</p>
+    </div>
+    <div class="valores-grid">
+      <div class="valor-carta">
+        <div class="valor-ico">❤️</div>
+        <h3>Pasión por viajar</h3>
+        <p>Somos viajeros antes que asesores. Vivimos lo que recomendamos y eso se nota en cada detalle.</p>
+      </div>
+      <div class="valor-carta">
+        <div class="valor-ico">🤝</div>
+        <h3>Compromiso</h3>
+        <p>Tu viaje es nuestra responsabilidad. Estamos contigo antes, durante y después de cada aventura.</p>
+      </div>
+      <div class="valor-carta">
+        <div class="valor-ico">✨</div>
+        <h3>Excelencia</h3>
+        <p>No nos conformamos con lo bueno. Buscamos lo extraordinario en cada experiencia que diseñamos.</p>
+      </div>
+      <div class="valor-carta">
+        <div class="valor-ico">🌿</div>
+        <h3>Responsabilidad</h3>
+        <p>Viajamos con conciencia, respetando las culturas, comunidades y el medio ambiente de cada destino.</p>
+      </div>
+      <div class="valor-carta">
+        <div class="valor-ico">🔍</div>
+        <h3>Transparencia</h3>
+        <p>Sin letras pequeñas ni sorpresas. Lo que ves es lo que obtienes: precios claros y honestidad total.</p>
+      </div>
+      <div class="valor-carta">
+        <div class="valor-ico">🌍</div>
+        <h3>Diversidad</h3>
+        <p>Creemos que el mundo es para todos. Diseñamos experiencias para todo tipo de viajeros y presupuestos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ EQUIPO ══════════════════════════════ -->
+  <section class="equipo-sec">
+    <div class="seccion-header">
+      <span class="etiqueta">Las personas detrás</span>
+      <h2>Nuestro <em>equipo</em></h2>
+      <p>Expertos apasionados por los viajes que trabajan cada día para hacer tus sueños realidad.</p>
+    </div>
+    <div class="equipo-grid">
+
+      <div class="equipo-carta">
+        <div class="equipo-foto">
+          <img src="./Img/user mujer.png" alt="Ana García">
+        </div>
+        <h4>Ana García</h4>
+        <span>Directora General</span>
+      </div>
+
+      <div class="equipo-carta">
+        <div class="equipo-foto">
+          <img src="./Img/user hombre.png" alt="Carlos Méndez">
+        </div>
+        <h4>Carlos Méndez</h4>
+        <span>Especialista Europa</span>
+      </div>
+
+      <div class="equipo-carta">
+        <div class="equipo-foto">
+          <img src="./Img/user mujer.png" alt="Laura Torres">
+        </div>
+        <h4>Laura Torres</h4>
+        <span>Especialista Caribe</span>
+      </div>
+
+      <div class="equipo-carta">
+        <div class="equipo-foto">
+          <img src="./Img/user hombre.png" alt="Sebastián Ríos">
+        </div>
+        <h4>Sebastián Ríos</h4>
+        <span>Especialista Asia</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-nosotros">
+    <div class="cta-nosotros-content">
+      <h2>¿Listo para vivir tu próxima <em>aventura?</em></h2>
+      <p>Nuestro equipo está listo para diseñar el viaje perfecto para ti. Contáctanos hoy mismo.</p>
+      <div class="cta-nosotros-btns">
+        <a href="./contactos.html" class="btn-primary">Hablar con un experto</a>
+        <a href="./destinos.html" class="btn-ghost">Ver destinos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════ FOOTER ══════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-marca">
+        <div class="footer-logo">
+          <span class="logo-mark">✦</span>
+          <span>Global Adventures</span>
+        </div>
+        <p>Diseñamos experiencias de viaje únicas para que descubras el mundo con total tranquilidad.</p>
+        <div class="footer-redes">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Páginas</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="destinos.html">Destinos</a></li>
+          <li><a href="paquetes.html">Paquetes</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Destinos</h4>
+        <ul>
+          <li><a href="destinos.html">Europa</a></li>
+          <li><a href="destinos.html">América</a></li>
+          <li><a href="destinos.html">Asia</a></li>
+          <li><a href="destinos.html">Caribe</a></li>
+          <li><a href="destinos.html">Oceanía</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contáctanos</h4>
+        <p>📍 Calle 72 #10-07, Bogotá</p>
+        <p>📞 +57 300 000 0000</p>
+        <p>✉️ hola@azulmar.co</p>
+        <p>🕐 Lun – Vie: 8am – 6pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Global Adventures. Todos los derechos reservados.</p>
+      <p>Diseñado con ✦ para exploradores del mundo</p>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>

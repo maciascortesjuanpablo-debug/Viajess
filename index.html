@@ -19,17 +19,16 @@
     </div>
     <ul class="nav-links">
       <li><a href="index.html">Inicio</a></li>
-      <li><a href="destinos.html">Destinos</a></li>
-      <li><a href="#">Nosotros</a></li>
-      <li><a href="contactos.html">Contacto</a></li>
+      <li><a href="./destinos.html">Destinos</a></li>
+      <li><a href="./nosotros.html">Nosotros</a></li>
+      <li><a href="./contactos.html">Contacto</a></li>
     </ul>
     <a href="#" class="btn-nav">Reservar ahora</a>
     <button class="hamburger" aria-label="Menú">&#9776;</button>
   </nav>
 
   <!-- ===== HERO ===== -->
-  <!-- 👇 PARA AGREGAR TU IMAGEN: cambia el style a background-image: url('tu-imagen.jpg') -->
-  <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+  <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1170&auto=format&fit=crop');">
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-tag">Agencia de Viajes Premium</p>
@@ -81,20 +80,21 @@
     </div>
     <div class="destinations-grid">
 
-        <div class="dest-card dest-card--large">
-        <img src="./Img/photo-1533104816931-20fa691ff6ca.avif" alt="Santorini, Grecia">
+      <div class="dest-card dest-card--large">
+        <div class="dest-img">
+          <img src="./Img/photo-1533104816931-20fa691ff6ca.avif" alt="Santorini, Grecia">
+        </div>
         <div class="dest-info">
-            <span class="dest-tag">Europa</span>
-            <h3>Santorini, Grecia</h3>
-            <p>Casas blancas, mar azul y atardeceres de ensueño.</p>
-            <a href="#" class="dest-link">Ver paquetes →</a>
+          <span class="dest-tag">Europa</span>
+          <h3>Santorini, Grecia</h3>
+          <p>Casas blancas, mar azul y atardeceres de ensueño.</p>
+          <a href="#" class="dest-link">Ver paquetes →</a>
         </div>
-        </div>
+      </div>
 
       <div class="dest-card">
-        <!-- IMAGEN: Destino 2 -->
-        <div class="dest-img-placeholder">
-        <img src="./Img/imagen bali.avif" alt="Bali, Indonesia">
+        <div class="dest-img">
+          <img src="./Img/imagen bali.avif" alt="Bali, Indonesia">
         </div>
         <div class="dest-info">
           <span class="dest-tag">Asia</span>
@@ -105,8 +105,7 @@
       </div>
 
       <div class="dest-card">
-        <!-- IMAGEN: Destino 3 -->
-        <div class="dest-img-placeholder">
+        <div class="dest-img">
           <img src="./Img/cartagena.avif" alt="Cartagena, Colombia">
         </div>
         <div class="dest-info">
@@ -118,8 +117,7 @@
       </div>
 
       <div class="dest-card">
-        <!-- IMAGEN: Destino 4 -->
-        <div class="dest-img-placeholder">
+        <div class="dest-img">
           <img src="./Img/maldivas.avif" alt="Maldivas">
         </div>
         <div class="dest-info">
@@ -131,8 +129,7 @@
       </div>
 
       <div class="dest-card">
-        <!-- IMAGEN: Destino 5 -->
-        <div class="dest-img-placeholder">
+        <div class="dest-img">
           <img src="./Img/francia.avif" alt="Paris, Francia">
         </div>
         <div class="dest-info">
@@ -145,7 +142,7 @@
 
     </div>
     <div class="section-cta">
-      <a href="#" class="btn-outline">Ver todos los destinos</a>
+      <a href="./destinos.html" class="btn-outline">Ver todos los destinos</a>
     </div>
   </section>
 
@@ -157,7 +154,7 @@
         <p class="section-tag">Nuestra promesa</p>
         <h2 class="section-title">¿Por qué viajar<br><em>con nosotros?</em></h2>
         <p class="why-desc">Llevamos más de 15 años convirtiendo sueños en realidad. Cada detalle importa, cada momento cuenta.</p>
-        <a href="#" class="btn-primary">Conoce nuestra historia</a>
+        <a href="./nosotros.html" class="btn-primary">Conoce nuestra historia</a>
       </div>
       <div class="why-features">
         <div class="feature-item">
@@ -202,9 +199,8 @@
     <div class="packages-grid">
 
       <div class="pkg-card">
-        <!-- IMAGEN: Paquete 1 -->
-        <div class="pkg-img-placeholder">
-          📷 IMAGEN PAQUETE 1<br>(Recomendado: 400×250px)
+        <div class="pkg-img">
+          <img src="./Img/cancun.avif" alt="Paquete Caribe">
         </div>
         <div class="pkg-badge">Más vendido</div>
         <div class="pkg-info">
@@ -224,9 +220,8 @@
       </div>
 
       <div class="pkg-card">
-        <!-- IMAGEN: Paquete 2 -->
-        <div class="pkg-img-placeholder">
-          📷 IMAGEN PAQUETE 2<br>(Recomendado: 400×250px)
+        <div class="pkg-img">
+          <img src="./Img/europa.avif" alt="Paquete Europa">
         </div>
         <div class="pkg-info">
           <div class="pkg-meta">
@@ -245,9 +240,8 @@
       </div>
 
       <div class="pkg-card">
-        <!-- IMAGEN: Paquete 3 -->
-        <div class="pkg-img-placeholder">
-          📷 IMAGEN PAQUETE 3<br>(Recomendado: 400×250px)
+        <div class="pkg-img">
+          <img src="./Img/asia.avif" alt="Paquete Asia">
         </div>
         <div class="pkg-info">
           <div class="pkg-meta">
@@ -277,10 +271,11 @@
     <div class="testimonials-grid">
 
       <div class="testi-card">
-        <!-- IMAGEN: Foto del cliente 1 -->
-        <div class="testi-avatar-placeholder">👤</div>
+        <div class="testi-avatar">
+          <span>👤</span>
+        </div>
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"El viaje a Santorini superó todas mis expectativas. El equipo de AzulMar organizó cada detalle a la perfección. ¡Ya estoy planeando el próximo!"</p>
+        <p class="testi-text">"El viaje a Santorini superó todas mis expectativas. Organizaron cada detalle a la perfección. ¡Ya estoy planeando el próximo!"</p>
         <div class="testi-author">
           <strong>María González</strong>
           <span>Bogotá, Colombia</span>
@@ -288,10 +283,11 @@
       </div>
 
       <div class="testi-card">
-        <!-- IMAGEN: Foto del cliente 2 -->
-        <div class="testi-avatar-placeholder">👤</div>
+        <div class="testi-avatar">
+          <span>👤</span>
+        </div>
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"Viajé con mi familia a Cancún y fue una experiencia increíble. Los niños aún hablan del viaje. Servicio de primera calidad, 100% recomendado."</p>
+        <p class="testi-text">"Viajé con mi familia a Cancún y fue una experiencia increíble. Los niños aún hablan del viaje. Servicio de primera calidad."</p>
         <div class="testi-author">
           <strong>Carlos Ramírez</strong>
           <span>Medellín, Colombia</span>
@@ -299,10 +295,11 @@
       </div>
 
       <div class="testi-card">
-        <!-- IMAGEN: Foto del cliente 3 -->
-        <div class="testi-avatar-placeholder">👤</div>
+        <div class="testi-avatar">
+          <span>👤</span>
+        </div>
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"La atención personalizada es lo que más me sorprendió. Sentí que planearon el viaje como si fuera el suyo propio. Absolutamente mágico."</p>
+        <p class="testi-text">"La atención personalizada es lo que más me sorprendió. Sentí que planearon el viaje como si fuera el suyo propio."</p>
         <div class="testi-author">
           <strong>Sofía Martínez</strong>
           <span>Cali, Colombia</span>
@@ -314,12 +311,6 @@
 
   <!-- ===== BANNER CTA ===== -->
   <section class="cta-banner">
-    <!-- IMAGEN: Imagen de fondo del banner (ej: avión, globo aerostático, atardecer) -->
-    <div class="cta-img-placeholder">
-      📷 IMAGEN FONDO BANNER — Reemplaza con: <br>
-      <code>background-image: url('banner-imagen.jpg');</code><br>
-      en la clase <strong>.cta-banner</strong> del CSS
-    </div>
     <div class="cta-overlay"></div>
     <div class="cta-content">
       <h2>¿Listo para tu próxima<br><em>aventura?</em></h2>
@@ -337,7 +328,7 @@
       <div class="footer-brand">
         <div class="footer-logo">
           <span class="logo-icon">✦</span>
-          <span class="logo-text">AzulMar</span>
+          <span class="logo-text">Global Adventures</span>
         </div>
         <p>Diseñamos experiencias de viaje únicas para que descubras el mundo con total tranquilidad.</p>
         <div class="footer-social">
@@ -347,47 +338,18 @@
           <a href="#">WhatsApp</a>
         </div>
       </div>
-
-      <div class="footer-links">
-        <h4>Destinos</h4>
-        <ul>
-          <li><a href="#">Europa</a></li>
-          <li><a href="#">América</a></li>
-          <li><a href="#">Asia</a></li>
-          <li><a href="#">Caribe</a></li>
-          <li><a href="#">Oceanía</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-links">
-        <h4>Servicios</h4>
-        <ul>
-          <li><a href="#">Paquetes todo incluido</a></li>
-          <li><a href="#">Vuelos</a></li>
-          <li><a href="#">Hoteles</a></li>
-          <li><a href="#">Tours guiados</a></li>
-          <li><a href="#">Viajes de luna de miel</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-links">
-        <h4>Empresa</h4>
-        <ul>
-          <li><a href="#">Sobre nosotros</a></li>
-          <li><a href="#">Blog de viajes</a></li>
-          <li><a href="#">Trabaja con nosotros</a></li>
-          <li><a href="#">Términos y condiciones</a></li>
-          <li><a href="#">Política de privacidad</a></li>
-        </ul>
-      </div>
-
       <div class="footer-contact">
         <h4>Contáctanos</h4>
         <p>📍 Calle 72 #10-07, Bogotá</p>
         <p>📞 +57 300 000 0000</p>
-        <p>✉️ <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fe9691929fbe9f848b92939f8cd09d91">[email&#160;protected]</a></p>
+        <p>✉️ hola@globaladventures.co</p>
         <p>🕐 Lun – Vie: 8am – 6pm</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 AzulMar Viajes. Todos los derech
+      <p>© 2025 Global Adventures. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
