@@ -7,100 +7,112 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/destinos.css" />
+  <link rel="stylesheet" href="./Css/destinos.css" />
 </head>
 <body>
-    <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
     <div class="nav-logo">
       <span class="logo-icon">🌍</span>
       <span class="logo-text">Global Adventures</span>
     </div>
     <ul class="nav-links">
       <li><a href="index.html">Inicio</a></li>
-      <li><a href="destinos.html">Destinos</a></li>
+      <li><a href="destinos.html" class="active">Destinos</a></li>
       <li><a href="nosotros.html">Nosotros</a></li>
       <li><a href="contactos.html">Contacto</a></li>
     </ul>
     <a href="#" class="btn-nav">Reservar ahora</a>
-    <button class="hamburger" aria-label="Menú">&#9776;</button>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menú">&#9776;</button>
   </nav>
 
-    <!-- ===== SECCIÓN DE DESTINOS ===== -->
-<section class="section destinations-page">
-        <div class="section-header">
-            <p class="section-tag">Descubre el mundo</p>
-            <h2 class="section-title">Destinos <em>imperdibles</em> por el mundo</h2>
-            <p class="section-sub">Descubre todos los lugares fascinantes que te esperan.</p>
-        </div>
-        <main class="destinos-container">
-        <!-- Tarjeta 1: Londres -->
-        <div class="destino-card">
-            <img src="./Img/Londres.jpg" alt="Londres, Reino Unido" class="destino-img">
-            <div class="destino-info">
-                <h3>Londres</h3>
-                <p>La capital del Reino Unido, conocida por su historia rica, arquitectura impresionante y museos de renombre mundial.</p>
-                <a href="#mas-info-londres" class="btn-ver-mas">Ver más</a>
-            </div>
-        </div>
+  <!-- ===== MENÚ MÓVIL ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Inicio</a>
+    <a href="destinos.html" class="active">Destinos</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contactos.html">Contacto</a>
+    <a href="contactos.html" class="btn-reservar-mobile">Reservar ahora</a>
+  </div>
 
-        <!-- Tarjeta 2: Brasil -->
-        <div class="destino-card">
-            <img src="./Img/Brasil.jpg" alt="Playa de Copacabana, Brasil" class="destino-img">
-            <div class="destino-info">
-                <h3>Brasil</h3>
-                <p>País más grande de América del Sur, conocido por su biodiversidad, cultura rica y playas hermosas.</p>
-                <a href="#mas-info-brasil" class="btn-ver-mas">Ver más</a>
-            </div>
-        </div>
-
-        <!-- Tarjeta 3: Las Vegas -->
-        <div class="destino-card">
-            <img src="./Img/Lasvegas.jpg" alt="Las Vegas, Estados Unidos" class="destino-img">
-            <div class="destino-info">
-                <h3>Las Vegas</h3>
-                <p> Ciudad de luces y entretenimiento, famosa por sus casinos, espectáculos y vida noturna vibrante.</p>
-                <a href="#mas-info-las-vegas" class="btn-ver-mas">Ver más</a>
-            </div>
-        </div>
-
-        <!-- Tarjeta 4: Malasia -->
-        <div class="destino-card">
-            <img src="./Img/Malasia.jpg" alt="Templo de Malasia" class="destino-img">
-            <div class="destino-info">
-                <h3>Malasia</h3>
-                <p>País insular en el sudeste asiático, conocido por su diversidad cultural, arquitectura colonial y paisajes tropicales.</p>
-                <a href="#mas-info-malasia" class="btn-ver-mas">Ver más</a>
-            </div>
-        </div>
-
-        <!-- Tarjeta 5: París -->
-        <div class="destino-card">
-            <img src="./Img/Paris.jpg" alt="Torre Eiffel, París" class="destino-img">
-            <div class="destino-info">
-                <h3>París</h3>
-                <p>La ciudad de la luz, famosa por su arquitectura neoclásica, museos de renombre y su ambiente romántico.</p>
-                <a href="#mas-info-paris" class="btn-ver-mas">Ver más</a>
-            </div>
-        </div>
-        
-        <!-- Tarjeta 6: Tokio -->
-        <div class="destino-card">
-            <img src="./Img/Tokio1.jpg" alt="Torre de Tokio, Japón" class="destino-img">
-            <div class="destino-info">
-                <h3>Tokio</h3>
-                <p>La capital de Japón, conocida por su mezcla única de tradición y modernidad, con lugares históricos y una vibrante vida urbana.</p>
-                <a href="#mas-info-tokio" class="btn-ver-mas">Ver más</a>
-            </div>
-        </div>
-    </main>
-</section>    
-
-<footer class="footer">
-    <div class="footer-bottom">
-    <p>&copy; 2025 Global Adventures. Todos los derechos reservados.</p>
+  <!-- ===== SECCIÓN DE DESTINOS ===== -->
+  <section class="section destinations-page">
+    <div class="section-header">
+      <p class="section-tag">Descubre el mundo</p>
+      <h2 class="section-title">Destinos <em>imperdibles</em> por el mundo</h2>
+      <p class="section-sub">Descubre todos los lugares fascinantes que te esperan.</p>
     </div>
-</footer>
-    
+    <main class="destinos-container">
+
+      <div class="destino-card">
+        <img src="./Img/Londres.jpg" alt="Londres, Reino Unido" class="destino-img">
+        <div class="destino-info">
+          <h3>Londres</h3>
+          <p>La capital del Reino Unido, conocida por su historia rica, arquitectura impresionante y museos de renombre mundial.</p>
+          <a href="#mas-info-londres" class="btn-ver-mas">Ver más</a>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <img src="./Img/Brasil.jpg" alt="Playa de Copacabana, Brasil" class="destino-img">
+        <div class="destino-info">
+          <h3>Brasil</h3>
+          <p>País más grande de América del Sur, conocido por su biodiversidad, cultura rica y playas hermosas.</p>
+          <a href="#mas-info-brasil" class="btn-ver-mas">Ver más</a>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <img src="./Img/Lasvegas.jpg" alt="Las Vegas, Estados Unidos" class="destino-img">
+        <div class="destino-info">
+          <h3>Las Vegas</h3>
+          <p>Ciudad de luces y entretenimiento, famosa por sus casinos, espectáculos y vida nocturna vibrante.</p>
+          <a href="#mas-info-las-vegas" class="btn-ver-mas">Ver más</a>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <img src="./Img/Malasia.jpg" alt="Templo de Malasia" class="destino-img">
+        <div class="destino-info">
+          <h3>Malasia</h3>
+          <p>País insular en el sudeste asiático, conocido por su diversidad cultural, arquitectura colonial y paisajes tropicales.</p>
+          <a href="#mas-info-malasia" class="btn-ver-mas">Ver más</a>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <img src="./Img/Paris.jpg" alt="Torre Eiffel, París" class="destino-img">
+        <div class="destino-info">
+          <h3>París</h3>
+          <p>La ciudad de la luz, famosa por su arquitectura neoclásica, museos de renombre y su ambiente romántico.</p>
+          <a href="#mas-info-paris" class="btn-ver-mas">Ver más</a>
+        </div>
+      </div>
+
+      <div class="destino-card">
+        <img src="./Img/Tokio1.jpg" alt="Torre de Tokio, Japón" class="destino-img">
+        <div class="destino-info">
+          <h3>Tokio</h3>
+          <p>La capital de Japón, conocida por su mezcla única de tradición y modernidad, con lugares históricos y vida urbana vibrante.</p>
+          <a href="#mas-info-tokio" class="btn-ver-mas">Ver más</a>
+        </div>
+      </div>
+
+    </main>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; 2025 Global Adventures. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+  </script>
+
 </body>
 </html>
