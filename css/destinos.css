@@ -19,6 +19,7 @@
   --shadow-card: 0 4px 24px rgba(10, 37, 64, 0.13);
   --transition: 0.3s cubic-bezier(.4,0,.2,1);
 }
+
 /* ===== RESET Y ESTILOS BASE ===== */
 *, *::before, *::after { 
     box-sizing: border-box; 

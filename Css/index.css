@@ -1,8 +1,3 @@
-/* ============================================================
-   AzulMar Viajes — styles.css
-   Paleta: Azules + Blanco
-   Compartido por todas las páginas del sitio
-   ============================================================ */
 
 /* ── VARIABLES ─────────────────────────────────────────────── */
 :root {
@@ -808,8 +803,9 @@ img {
   color: var(--gris-texto);
 }
 
-/* ── BANNER CTA  */
-
+/* ── BANNER CTA ─────────────────────────────────────────────── */
+/* 👇 Agrega tu imagen en el atributo style del HTML:
+   style="background-image: url('banner.jpg');"            */
 .cta-banner {
   position: relative;
   min-height: 420px;
