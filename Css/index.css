@@ -561,3 +561,122 @@ img { display: block; width: 100%; object-fit: cover; }
   .hero-actions { flex-direction: column; align-items: center; }
   .cta-actions { flex-direction: column; align-items: center; }
 }
+
+
+/* ===== CONTACTO ===== */
+.contact-section {
+  background: var(--gris-claro); /* Usa una de tus variables de color definidas */
+  padding: 6rem 2rem; /* Espaciado interno de la sección */
+}
+
+.contact-content-wrapper {
+  display: flex; /* Para organizar la info y el formulario en columnas */
+  flex-wrap: wrap; /* Para que se ajusten a una sola columna en pantallas pequeñas */
+  gap: 3rem; /* Espacio entre la información y el formulario */
+  max-width: 1000px; /* Ancho máximo para que no se extienda demasiado */
+  margin: 0 auto; /* Centra el contenido */
+  align-items: flex-start; /* Alinea los ítems al inicio de su contenedor */
+}
+
+.contact-info,
+.contact-form-container {
+  flex: 1; /* Permite que ambos contenedores crezcan y ocupen el espacio disponible */
+  min-width: 300px; /* Ancho mínimo para que no se compriman demasiado */
+  background: var(--blanco); /* Fondo blanco para las tarjetas */
+  padding: 2.5rem; /* Espaciado interno */
+  border-radius: var(--radius); /* Bordes redondeados */
+  box-shadow: var(--shadow-card); /* Sombra para dar un efecto de profundidad */
+}
+
+.contact-info h3,
+.contact-form-container h3 {
+  font-family: var(--font-display); /* Usa tu fuente de títulos */
+  font-size: 1.8rem;
+  color: var(--azul-profundo); /* Color de título */
+  margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: var(--gris-texto); /* Color de texto general */
+  margin-bottom: 1rem;
+  line-height: 1.5; /* Altura de línea para mejor legibilidad */
+}
+
+.contact-info p strong {
+  color: var(--texto-oscuro); /* Un poco más oscuro para resaltar la información clave */
+}
+
+.social-links-contact {
+  margin-top: 1.5rem;
+  display: flex; /* Para alinear los enlaces de redes sociales horizontalmente */
+  gap: 1.5rem; /* Espacio entre los enlaces */
+}
+
+.social-links-contact a {
+  color: var(--azul-vivo); /* Color de enlace */
+  font-weight: 500;
+  transition: color var(--transition); /* Transición suave al pasar el ratón */
+}
+
+.social-links-contact a:hover {
+  color: var(--azul-medio); /* Cambio de color al pasar el ratón */
+}
+
+.form-description {
+  font-size: 0.95rem;
+  color: var(--gris-texto);
+  margin-bottom: 2rem;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1.2rem; /* Espacio entre cada grupo de formulario (label + input) */
+}
+
+.contact-form label {
+  display: block; /* Para que cada label ocupe su propia línea */
+  font-size: 0.9rem;
+  color: var(--texto-oscuro);
+  margin-bottom: 0.6rem;
+  font-weight: 500;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form input[type="number"],
+.contact-form textarea {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--azul-suave); /* Borde suave */
+  border-radius: var(--radius-sm); /* Bordes ligeramente redondeados */
+  font-family: var(--font-body); /* Usa tu fuente de texto */
+  font-size: 1rem;
+  color: var(--texto-oscuro);
+  transition: border-color var(--transition); /* Transición para el borde al enfocar */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none; /* Elimina el contorno predeterminado del navegador */
+  border-color: var(--azul-claro); /* Borde más claro al enfocar */
+  box-shadow: 0 0 0 3px rgba(30, 111, 217, 0.1); /* Sombra sutil al enfocar */
+}
+
+.contact-form textarea {
+  resize: vertical; /* Permite redimensionar solo verticalmente */
+  min-height: 100px; /* Altura mínima para el área de texto */
+}
+
+/* ===== Media Queries para Contact Section (Ajustes responsivos) ===== */
+@media (max-width: 768px) {
+  .contact-content-wrapper {
+    flex-direction: column; /* En pantallas pequeñas, apila la info y el formulario */
+    gap: 2rem; /* Ajusta el espacio entre ellos */
+  }
+
+  .contact-info,
+  .contact-form-container {
+    padding: 2rem; /* Reduce el padding en pantallas pequeñas */
+  }
+}
