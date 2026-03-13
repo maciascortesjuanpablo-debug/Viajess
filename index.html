@@ -35,8 +35,8 @@
       <h1 class="hero-title">Cada viaje <br><em>es una historia</em></h1>
       <p class="hero-sub">Diseñamos experiencias únicas e irrepetibles para ti y los que más quieres.</p>
       <div class="hero-actions">
-        <a href="#" class="btn-primary">Explorar destinos</a>
-        <a href="#" class="btn-ghost">Ver paquetes</a>
+        <a href="./destinos.html" class="btn-primary">Explorar destinos</a>
+        <a href="./destinos.html" class="btn-ghost">Ver paquetes</a>
       </div>
     </div>
     <div class="hero-scroll">
@@ -88,7 +88,7 @@
           <span class="dest-tag">Europa</span>
           <h3>Santorini, Grecia</h3>
           <p>Casas blancas, mar azul y atardeceres de ensueño.</p>
-          <a href="#" class="dest-link">Ver paquetes →</a>
+          <a href="./destinos.html" class="dest-link">Ver paquetes →</a>
         </div>
       </div>
 
@@ -100,7 +100,7 @@
           <span class="dest-tag">Asia</span>
           <h3>Bali, Indonesia</h3>
           <p>Templos, selvas y playas paradisíacas.</p>
-          <a href="#" class="dest-link">Ver paquetes →</a>
+          <a href="./destinos.html" class="dest-link">Ver paquetes →</a>
         </div>
       </div>
 
@@ -112,7 +112,7 @@
           <span class="dest-tag">América</span>
           <h3>Cartagena, Colombia</h3>
           <p>Historia, color y el calor del Caribe.</p>
-          <a href="#" class="dest-link">Ver paquetes →</a>
+          <a href="./destinos.html" class="dest-link">Ver paquetes →</a>
         </div>
       </div>
 
@@ -124,7 +124,7 @@
           <span class="dest-tag">Oceanía</span>
           <h3>Maldivas</h3>
           <p>Aguas cristalinas y bungalós sobre el mar.</p>
-          <a href="#" class="dest-link">Ver paquetes →</a>
+          <a href="./destinos.html" class="dest-link">Ver paquetes →</a>
         </div>
       </div>
 
@@ -136,7 +136,7 @@
           <span class="dest-tag">Europa</span>
           <h3>París, Francia</h3>
           <p>Arte, gastronomía y la magia de la Ciudad Luz.</p>
-          <a href="#" class="dest-link">Ver paquetes →</a>
+          <a href="./destinos.html" class="dest-link">Ver paquetes →</a>
         </div>
       </div>
 
@@ -215,7 +215,7 @@
             <span class="price-amount">$1.290 USD</span>
             <span class="price-per">/ persona</span>
           </div>
-          <a href="#" class="btn-primary btn-full">Reservar ahora</a>
+          <a href="./contactos.html" class="btn-primary btn-full">Reservar ahora</a>
         </div>
       </div>
 
@@ -235,7 +235,7 @@
             <span class="price-amount">$2.490 USD</span>
             <span class="price-per">/ persona</span>
           </div>
-          <a href="#" class="btn-primary btn-full">Reservar ahora</a>
+          <a href="./contactos.html" class="btn-primary btn-full">Reservar ahora</a>
         </div>
       </div>
 
@@ -255,7 +255,7 @@
             <span class="price-amount">$1.890 USD</span>
             <span class="price-per">/ persona</span>
           </div>
-          <a href="#" class="btn-primary btn-full">Reservar ahora</a>
+          <a href="./contactos.html" class="btn-primary btn-full">Reservar ahora</a>
         </div>
       </div>
 
@@ -316,7 +316,7 @@
       <h2>¿Listo para tu próxima<br><em>aventura?</em></h2>
       <p>Habla con uno de nuestros expertos y diseña el viaje de tus sueños hoy mismo.</p>
       <div class="cta-actions">
-        <a href="#" class="btn-primary">Contáctanos ahora</a>
+        <a href="./contactos.html" class="btn-primary">Contáctanos ahora</a>
         <a href="tel:+57300000000" class="btn-ghost">📞 +57 300 000 0000</a>
       </div>
     </div>
@@ -350,6 +350,15 @@
       <p>© 2025 Global Adventures. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+    <script>
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+  </script>
 
 </body>
 </html>
