@@ -1165,7 +1165,7 @@ img {
   padding: 0.85rem 1rem;
   border: 1px solid var(--azul-suave); /* Borde suave */
   border-radius: var(--radius-sm); /* Bordes ligeramente redondeados */
-  font-family: var(--font-body); /* Usa tu fuente de texto */
+  font-family: var(--font-body); /* fuente de texto */
   font-size: 1rem;
   color: var(--texto-oscuro);
   transition: border-color var(--transition); /* Transición para el borde al enfocar */
