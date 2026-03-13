@@ -808,9 +808,8 @@ img {
   color: var(--gris-texto);
 }
 
-/* ── BANNER CTA ─────────────────────────────────────────────── */
-/* 👇 Agrega tu imagen en el atributo style del HTML:
-   style="background-image: url('banner.jpg');"            */
+/* ── BANNER CTA  */
+
 .cta-banner {
   position: relative;
   min-height: 420px;
