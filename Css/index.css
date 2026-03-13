@@ -257,10 +257,16 @@ img {
   font-size: 1.4rem;
   cursor: pointer;
 }
+.btn-reservar-mobile {
+  background: var(--azul-vivo);
+  color: var(--blanco) !important;
+  padding: 0.7rem 1.5rem;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: 500;
+}
 
 /* ── HERO ───────────────────────────────────────────────────── */
-/* 👇 Agrega tu imagen en el atributo style del HTML:
-   style="background-image: url('hero.jpg');"              */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -804,8 +810,6 @@ img {
 }
 
 /* ── BANNER CTA ─────────────────────────────────────────────── */
-/* 👇 Agrega tu imagen en el atributo style del HTML:
-   style="background-image: url('banner.jpg');"            */
 .cta-banner {
   position: relative;
   min-height: 420px;
@@ -1066,8 +1070,6 @@ img {
 }
 
 @media (max-width: 480px) {
-<<<<<<< HEAD
-<<<<<<< HEAD
   .section { padding: 3.5rem 1rem; }
   .hero-actions { flex-direction: column; align-items: center; }
   .cta-actions { flex-direction: column; align-items: center; }
@@ -1189,10 +1191,8 @@ img {
   .contact-info,
   .contact-form-container {
     padding: 2rem; /* Reduce el padding en pantallas pequeñas */
-=======
-=======
->>>>>>> a084c9cb0bffc6beedf175e6ab960c4ec308a14e
-  .section {
+  }
+.section {
     padding: 3.5rem 1rem;
   }
 
